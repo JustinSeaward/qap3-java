@@ -44,6 +44,7 @@ public class MovablePoint extends Point {
         return new float[]{this.xSpeed, this.ySpeed};
     }
 
+    @Override
     public String toString(){
         return "(" + getX() + "," + getY() + ")" + ", speed = (" + this.xSpeed + "," + this.ySpeed + ")";
     }
