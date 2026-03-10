@@ -25,4 +25,8 @@ public class Student extends Person {
     public void setMyGPA(double myGPA) {
         this.myGPA = myGPA;
     }
+
+    public String toString(){
+        return super.toString() + ", ID Number: " + myIdNumber + ", GPA: " + myGPA;
+    }
 }
