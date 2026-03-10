@@ -4,7 +4,7 @@ public class CollegeStudent extends Student{
     protected String myMajor;
     protected int myYear;
 
-    public CollegeStudent(String name, int age, String gender, int idNumber, int gpa, int year, String major){
+    public CollegeStudent(String name, int age, String gender, String idNumber, double gpa, int year, String major){
         super(name,age,gender,idNumber,gpa);
         myYear = year;
         myMajor = major;

@@ -1,20 +1,20 @@
 package Problem1;
 
 public class Student extends Person {
-    protected int myIdNumber;
+    protected String myIdNumber;
     protected double myGPA;
 
-    public Student(String name, int age, String gender, int idNumber, double gpa){
+    public Student(String name, int age, String gender, String idNumber, double gpa){
         super(name,age,gender);
         myIdNumber = idNumber;
         myGPA = gpa;
     }
 
-    public int getMyIdNumber() {
+    public String getMyIdNumber() {
         return myIdNumber;
     }
 
-    public void setMyIdNumber(int myIdNumber) {
+    public void setMyIdNumber(String myIdNumber) {
         this.myIdNumber = myIdNumber;
     }
 
