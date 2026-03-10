@@ -14,4 +14,28 @@ public class Person {
     public String toString(){
         return myName + ", age: " + myAge + ", gender: " + myGender;
     }
+
+    public String getMyName() {
+        return myName;
+    }
+
+    public void setMyName(String myName) {
+        this.myName = myName;
+    }
+
+    public String getMyGender() {
+        return myGender;
+    }
+
+    public void setMyGender(String myGender) {
+        this.myGender = myGender;
+    }
+
+    public int getMyAge() {
+        return myAge;
+    }
+
+    public void setMyAge(int myAge) {
+        this.myAge = myAge;
+    }
 }
