@@ -27,4 +27,8 @@ public class Ellipse extends Shape {
     public double getPerimeter() {
         return Math.PI*Math.sqrt(2*(majorAxes*majorAxes+minorAxes*minorAxes)-(majorAxes-minorAxes)*(majorAxes-minorAxes)/2);
     }
+
+    public String toString(){
+        return super.toString();
+    }
 }
