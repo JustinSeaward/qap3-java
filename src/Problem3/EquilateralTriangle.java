@@ -34,8 +34,8 @@ public class EquilateralTriangle extends Shape {
     @Override
     public double getArea() {
         double semiPerimeter;
-        semiPerimeter = (this.side1 + this.side1 + this.side1) / 2;
-        return Math.sqrt(semiPerimeter*(semiPerimeter-this.side1)*(semiPerimeter-this.side2)*(semiPerimeter-side2));
+        semiPerimeter = (this.side1 + this.side2 + this.side3) / 2;
+        return Math.sqrt(semiPerimeter*(semiPerimeter-this.side1)*(semiPerimeter-this.side2)*(semiPerimeter-side3));
     }
 
     @Override
