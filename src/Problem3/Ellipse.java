@@ -1,4 +1,30 @@
 package Problem3;
 
-public class Ellipse {
+public class Ellipse extends Shape {
+    private double majorAxes = 0.0;
+    private double minorAxes = 0.0;
+
+    public Ellipse(){
+    }
+
+    public Ellipse(String name, double a, double b){
+        super(name);
+        if(a>b){
+            this.majorAxes = a;
+            this.minorAxes = b;
+        } else {
+            this.majorAxes = b;
+            this.minorAxes = a;
+        }
+    }
+
+    @Override
+    public double getArea() {
+        return Math.PI*(majorAxes*minorAxes);
+    }
+
+    @Override
+    public double getPerimeter() {
+        return Math.PI*Math.sqrt(2*(majorAxes*majorAxes+minorAxes*minorAxes)-(majorAxes-minorAxes)*(majorAxes-minorAxes)/2);
+    }
 }
