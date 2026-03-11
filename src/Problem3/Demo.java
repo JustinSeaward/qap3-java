@@ -17,7 +17,7 @@ public class Demo {
        Shapes.add(et1);
        Shapes.add(triangle1);
 
-       // Test code to see if the validation will work. it worked.
+       // Test code to see if the validation will work and stop the program.
        //        EquilateralTriangle et2 = new EquilateralTriangle("Equilateral Triangle", 20,30,20);
         //       Shapes.add(et2);
 

@@ -1,10 +1,12 @@
 package Problem3;
 
 public class EquilateralTriangle extends Shape {
+    //Instance variables
     private double side1;
     private double side2;
     private double side3;
 
+    //Constructors
     public EquilateralTriangle(){
 
     }
@@ -21,6 +23,7 @@ public class EquilateralTriangle extends Shape {
         }
     }
 
+    // Getter and setter
     public void setSideLength(double side){
         this.side1 = side;
         this.side2 = side;
@@ -31,6 +34,7 @@ public class EquilateralTriangle extends Shape {
         return this.side1;
     }
 
+    // Implementing inherited methods
     @Override
     public double getArea() {
         double semiPerimeter;
@@ -44,6 +48,7 @@ public class EquilateralTriangle extends Shape {
 
     }
 
+    // toString method
     public String toString(){
         return super.toString();
     }

@@ -1,8 +1,10 @@
 package Problem3;
 
 public abstract class Shape {
+    // Instance variable
     private String name;
 
+    // Constructors
     public Shape(){
     }
 
@@ -10,6 +12,7 @@ public abstract class Shape {
         this.name = name;
     }
 
+    // Getters and setters
     public String getName() {
         return name;
     }
@@ -18,10 +21,12 @@ public abstract class Shape {
         this.name = name;
     }
 
+    // Abstract methods
     public abstract double getArea();
 
     public abstract double getPerimeter();
 
+    // toString method
     public String toString(){
         return "Name: " + this.name + ", Area: " + this.getArea() + ", Perimeter: " + this.getPerimeter();
     }

@@ -1,10 +1,12 @@
 package Problem3;
 
 public class Triangle extends Shape{
+    // Instance variables
     private double sideA;
     private double sideB;
     private double sideC;
 
+    // Constructors
     public Triangle(){
 
     }
@@ -22,6 +24,7 @@ public class Triangle extends Shape{
 
     }
 
+    //Getters and setters
     public double getSideA() {
         return sideA;
     }
@@ -46,6 +49,7 @@ public class Triangle extends Shape{
         this.sideC = sideC;
     }
 
+    // Implementing inherited methods
     @Override
     public double getArea() {
         double semiPerimeter;
@@ -59,6 +63,7 @@ public class Triangle extends Shape{
 
     }
 
+    // toString method
     public String toString(){
         return super.toString();
     }

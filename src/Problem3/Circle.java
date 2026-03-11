@@ -1,14 +1,12 @@
 package Problem3;
 
 public class Circle extends Shape{
+    //Instance variable
     private double radius;
 
+    // Constructors
     public Circle(){
 
-    }
-
-    public Circle(String name){
-        super(name);
     }
 
     public Circle(String name, double radius){
@@ -16,6 +14,7 @@ public class Circle extends Shape{
         this.radius = radius;
     }
 
+    // Getter and setters
     public double getRadius() {
         return radius;
     }
@@ -24,6 +23,7 @@ public class Circle extends Shape{
         this.radius = radius;
     }
 
+    // Implementing inherited methods
     @Override
     public double getArea() {
         return Math.PI * getRadius() * getRadius();
@@ -32,6 +32,10 @@ public class Circle extends Shape{
     @Override
     public double getPerimeter() {
         return 2 * Math.PI * this.radius;
+    }
+
+    public String toString(){
+        return super.toString();
     }
 
 }
