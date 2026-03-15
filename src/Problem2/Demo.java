@@ -9,7 +9,5 @@ public class Demo {
 
         myPoint.move();
         System.out.println("My Point moved: " + myPoint);
-
-
     }
 }
