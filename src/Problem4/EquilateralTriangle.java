@@ -36,7 +36,7 @@ public class EquilateralTriangle extends Shape {
         return this.side1;
     }
 
-    // Implementing inherited methods
+    // Implemented inherited methods
     @Override
     public double getArea() {
         double semiPerimeter;
