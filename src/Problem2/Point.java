@@ -1,9 +1,11 @@
 package Problem2;
 
 public class Point {
+    //Instance variables
     private float x = 0.0f;
     private float y = 0.0f;
 
+    //Constructors
     public Point(float x, float y){
         this.x = x;
         this.y = y;
@@ -13,6 +15,7 @@ public class Point {
 
     }
 
+    // Getters and setters
     public float getX() {
         return x;
     }
@@ -37,7 +40,7 @@ public class Point {
     public float[] getXY(){
         return new float[] {this.x, this.y};
     }
-
+    // overridden toString method
     @Override
     public String toString(){
         return "(" + this.x + "," + this.y +  ")";

@@ -1,9 +1,11 @@
 package Problem2;
 
 public class MovablePoint extends Point {
+    // Instance variables
     private float xSpeed = 0.0f;
     private float ySpeed = 0.0f;
 
+    //Constructors
     public MovablePoint(float x, float y, float xSpeed, float ySpeed){
         super(x,y);
         this.xSpeed = xSpeed;
@@ -19,6 +21,7 @@ public class MovablePoint extends Point {
 
     }
 
+    // Getters and setters
     public float getXSpeed() {
         return xSpeed;
     }
@@ -35,20 +38,22 @@ public class MovablePoint extends Point {
         this.ySpeed = ySpeed;
     }
 
+    public float[] getSpeed(){
+        return new float[]{this.xSpeed, this.ySpeed};
+    }
+
     public void setSpeed(float xSpeed, float ySpeed){
         this.xSpeed = xSpeed;
         this.ySpeed = ySpeed;
     }
 
-    public float[] getSpeed(){
-        return new float[]{this.xSpeed, this.ySpeed};
-    }
-
+    // Overridden toString method
     @Override
     public String toString(){
         return "(" + getX() + "," + getY() + ")" + ", speed = (" + this.xSpeed + "," + this.ySpeed + ")";
     }
 
+    // move method to move the point to a different X&Y axis
     public MovablePoint move(){
         float x = getX();
         float y = getY();
